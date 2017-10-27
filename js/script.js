@@ -118,3 +118,17 @@ $(".navbar-toggler").bind('click',function(){
   $(".navbar-toggler").bind('click',function() {
   	$(".navbar-toggler").toggleClass("burger-active");
   })
+
+    $('.pin').bind('click',function(){
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+  
+  $('.button-down').bind('click.smoothscroll',function(){
+    $('html, body').stop().animate({
+
+      scrollTop:  $('#anchor').offset().top - 50 }, 'slow'
+    );
+});
