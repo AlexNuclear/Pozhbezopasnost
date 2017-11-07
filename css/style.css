@@ -678,7 +678,6 @@ li.nav-item:hover .nav-item:after {
 
 .articles h2 {
 	display: inline-block;
-	margin-right: 35px;
 	margin: 7px 57px 40px 0;
 }
 
@@ -1186,7 +1185,6 @@ p.license-text {
 .have-questions {
 	background: url(../img/more-questions-bg.jpg) no-repeat;
     background-size: cover;
-    margin-bottom: 110px;
 }
 
 .have-questions p {
@@ -1504,6 +1502,26 @@ p.license-text {
 
 
 @media screen and (max-width: 700px) {
+	#single_image img {
+		width: 130px;
+	}
+
+	.articles h2 {
+		display: inline-block;
+		margin: 7px 57px 100px 0;
+	}
+
+	.news h2 {
+		display: inline-block;
+		margin: 7px 57px 100px 0;
+	}
+	.main-banner-text-block h1 {
+		font-size: 26px;
+	}
+
+	.about-us-item__second-half p {
+		font-size: 10px;
+	}
 
 	.col-lg-3:nth-child(even) .about-us-item .about-us-item__first-half {
 	    padding: 8% 2% 0px 12%;	
@@ -1515,9 +1533,6 @@ p.license-text {
 	    font-size: 34px;
 	}
 
-	.news h2 {
-		margin-bottom: 100px
-	}
 	.switcher {
 		left: 15px;
 		top: 110px;
@@ -1541,6 +1556,9 @@ p.license-text {
 }
 
 @media screen and (max-width: 576px) {
+	.bottom-text-left {
+		margin-bottom: 20px;
+	}
 
 	li.nav-item {
 	    width: 200px;
@@ -1566,7 +1584,7 @@ p.license-text {
 	    width: 50%;
 	    float: right;
 	    height: 189px;
-	    padding: 24px 0px 0 5px;
+	    padding: 30px 0px 0 5px;
 	}
 	.col-lg-3:nth-child(even) .about-us-item .about-us-item__first-half {
 	    width: 50%;
@@ -1733,7 +1751,21 @@ p.license-text {
 	    margin-bottom: 80px;
 	    top: 80px;
 	}
+
 	li.nav-item {
 	    width: 170px;
+	}
+
+	.main-banner-text-block h1 {
+		font-size: 19px;
+	}
+	.about-us-item__second-half p {
+		font-size: 12px;
+	}
+
+	.main-banner-inner button {
+    width: 95px;
+    margin-right: 115px;
+    margin-left: 5px;
 	}
 }
