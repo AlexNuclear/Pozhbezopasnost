@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 04/10/2017 10:56
+  	Creation date: 03/11/2017 11:08
   	*/
 
 @font-face {
@@ -30,14 +30,17 @@ margin-left: 20px;
 }
 
 .flaticon-justice:before { content: "\f100"; }
-.flaticon-download-arrow:before { content: "\f101"; }
-.flaticon-right-arrow:before { content: "\f102"; }
-.flaticon-left-arrow:before { content: "\f103"; }
-.flaticon-people:before { content: "\f104"; }
-.flaticon-time:before { content: "\f105"; }
-.flaticon-arrows-1:before { content: "\f106"; }
-.flaticon-arrows:before { content: "\f107"; }
-.flaticon-technology:before { content: "\f108"; }
-.flaticon-diploma:before { content: "\f109"; }
-.flaticon-interface:before { content: "\f10a"; }
-.flaticon-arrows-2:before { content: "\f10b"; }
+.flaticon-interface:before { content: "\f101"; }
+.flaticon-download-arrow:before { content: "\f102"; }
+.flaticon-right-arrow:before { content: "\f103"; }
+.flaticon-left-arrow:before { content: "\f104"; }
+.flaticon-people:before { content: "\f105"; }
+.flaticon-arrows-2:before { content: "\f106"; }
+.flaticon-arrows-1:before { content: "\f107"; }
+.flaticon-arrows:before { content: "\f108"; }
+.flaticon-multimedia:before { content: "\f109"; }
+.flaticon-diploma:before { content: "\f10a"; }
+.flaticon-time:before { content: "\f10b"; }
+.flaticon-chevron-up:before { content: "\f10c"; }
+.flaticon-technology:before { content: "\f10d"; }
+.flaticon-mail:before { content: "\f10e"; }

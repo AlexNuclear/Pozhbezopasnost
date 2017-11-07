@@ -109,6 +109,7 @@ $(".navbar-toggler").bind('click',function(){
   
     $(".news").toggleClass("active")
     $(".articles").toggleClass("active")
+    $(".news-articles LABEL SPAN").toggleClass("purple")
 
     $(".news").fadeToggle();
     $(".articles").fadeToggle();

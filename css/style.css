@@ -112,7 +112,7 @@ li.nav-item:hover .nav-item:after {
     background-color: white;
     width: 230px;
     padding: 5px 40px;
-    line-height: 24px;
+    line-height: 21px;
 }
 
 .active:before  {
@@ -390,6 +390,7 @@ li.nav-item:hover .nav-item:after {
     display: table;
 }
 */
+
 .slick-slide img {
     display: inline-block;
 }
@@ -618,7 +619,6 @@ li.nav-item:hover .nav-item:after {
 
 .news h2 {
 	display: inline-block;
-	margin-right: 40px;
     margin: 7px 57px 40px 0;
 }
 
@@ -679,7 +679,7 @@ li.nav-item:hover .nav-item:after {
 .articles h2 {
 	display: inline-block;
 	margin-right: 35px;
-	margin: 7px 80px 40px 0;
+	margin: 7px 57px 40px 0;
 }
 
 .articles-item {
@@ -716,12 +716,13 @@ li.nav-item:hover .nav-item:after {
 }
 
 .articles-item p {
-	font-size: 12px
+	font-size: 12px;
+	line-height: 40px;
 }
 
 .articles-item h5 {
 	font-size: 18px;
-	margin:30px 0;
+	margin: 30px 0px 15px 0;
 }
 
 .active {
@@ -992,13 +993,16 @@ p.license-text {
 }*/
 
 .pin {
-	border: 36px solid transparent;
-    border-bottom: 36px solid #f6f6f6;
+    /* border: 36px solid transparent; */
+    /* border-bottom: 36px solid #f6f6f6; */
     position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 5px;
-    top: -68px;
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    background: #f6f6f6;
+    transform: rotate(45deg);
+    /* border-radius: 5px; */
+    top: -17px;
     left: 74%;
     cursor: pointer;
 }
@@ -1008,10 +1012,11 @@ p.license-text {
     background-repeat: no-repeat;
     position: absolute;
     content: '';
-    top: 12px;
-    left: -12px;
+    top: 0px;
+    left: 4px;
     width: 30px;
     height: 30px;
+    transform: rotate(-45deg);
 }
 
 .button-down {
@@ -1033,6 +1038,105 @@ p.license-text {
     left: 3px;
     width: 25px;
     height: 25px;
+}
+.button-load {
+	border: 2px solid #9e0039;
+    margin-top: 67px;
+    width: 100%;
+    height: 51px;
+    background-color: white;
+    border-radius: 13px;
+    color: #9e0039;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.button-load:hover {
+	background: #9e0039;
+	color: white;
+	transition: 0.7s ease;
+}
+
+.margin-t {
+	margin-top: 50px;
+}
+
+.margin-b {
+	margin-bottom: 60px;
+}
+
+.bread-crumbs {
+	margin: 42px 0;
+}
+
+.bread-crumbs span:last-child {
+	color: #9e0039;
+}
+
+.purple {
+	color: #9e0039;
+	font-weight: bold;
+}
+
+.contacts .map-text {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.map-text-left {
+	font-weight: 300;
+	font-size: 14px;
+    padding: 45px 30px;
+    line-height: 24px;
+}
+.map-text-right {
+    padding: 45px 30px;
+    min-height: 522px;
+}
+
+.map-text-right h6 {
+    margin: 0;
+    line-height: 10px;
+}
+
+.map-text-right div span {
+	display: inline-block;
+	padding-right: 10px;
+	line-height: 40px;
+	margin:0;
+	vertical-align: middle;
+}
+.map-text-right div {
+	height: 40px;
+	display: block;
+}
+
+.map-text-right div span:before {
+	margin:0;
+}
+
+.contacts .map-text h6 {
+	font-size: 36px;
+	line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.socials img {
+	margin-right: 15px;
+}
+
+.socials {
+    margin: 30px 0px;
+}
+
+.button-white {
+    border: none;
+    width: 169px;
+    height: 32px;
+    border-radius: 4px;
+    color: #525252;
+    background-color: #f6f6f6;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1334,17 +1438,7 @@ p.license-text {
 	    position: relative;
 	    left: -10%;
 	}
-	.pin {
-	    border: 33px solid transparent;
-	    border-bottom: 31px solid #f6f6f6;
-	    position: absolute;
-	    height: 25px;
-	    width: 25px;
-	    border-radius: 5px;
-	    top: -59px;
-	    left: 74%;
-	    cursor: pointer;
-	}
+
 
 @media screen and (max-width: 700px) {
 
@@ -1428,9 +1522,24 @@ p.license-text {
 	.about-us-item__first-half p {
     	font-size: 12px;
 	}
+
+	.button-down {
+	    top: 85%;
+	}
+
+	.navbar-nav {
+	    position: relative;
+	    left: -10%;
+	    margin-bottom: 88px;
+	    top: 30px;
+	}
 }
 
 @media screen and (max-width: 320px) {
+
+	.button-down {
+	    top: 87%;
+	}
 
 	.project-item {
 		width: 300px;
@@ -1522,7 +1631,9 @@ p.license-text {
 	.bottom-text-left {
 	    font-size: 10px;
 	    line-height: 12px;
+	    display: inline-block;
 	}
+
 	.slider2-item .slider2-item__image {
 	    display: inline-block;
 	    margin-bottom: 25px;
@@ -1539,5 +1650,15 @@ p.license-text {
 	}
 	.bottom-text {
 	    padding: 8px 25px;
+	}
+
+	.navbar-nav {
+	    position: relative;
+	    left: -10%;
+	    margin-bottom: 80px;
+	    top: 80px;
+	}
+	li.nav-item {
+	    width: 170px;
 	}
 }
