@@ -490,7 +490,7 @@ li.nav-item:hover .nav-item:after {
 	width: 100%;
 	background: #f6f6f6;
 	padding: 72px 0;
-	margin-bottom: 70px;
+/*	margin-bottom: 70px;*/
 }
 
 .our-partners h2 {
@@ -740,24 +740,22 @@ p.license-text {
 }
 
 .map {
-	width: 100%;
 	height: 500px;
-	display: table;
 }
 
 .map-window {
-	height: 100%;
+	height: 500px;
 	width: 60%;
 	border-top: 1px solid #525252;
-	display: table-cell;
+	float: left;
 }
 
 .map-text {
 	width: 40%;
-    display: table-cell;
+    float:right;
     background: url(../img/map-text.jpg) no-repeat;
     background-size: cover;
-    padding: 50px 300px 0 50px;
+    padding: 50px 140px 0 50px;
     vertical-align: top;
     color: white;
     height: 100%;
@@ -825,6 +823,7 @@ p.license-text {
 
 .news-articles {
 	position: relative;
+	padding: 40px 0;
 }
 
 .switcher {
@@ -833,7 +832,7 @@ p.license-text {
     width: 170px;
     padding: 24px 62px;
     position: absolute;
-    top: 0px;
+    top: 40px;
     left: 70%;
 }
 
@@ -1081,7 +1080,21 @@ p.license-text {
 .contacts .map-text {
     display: block;
     width: 100%;
+    height: 100%;
     padding: 0;
+    float: none;
+}
+
+.contacts .map-window {
+	width: 100%;
+	float: none;
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .map-text-left {
@@ -1090,6 +1103,7 @@ p.license-text {
     padding: 45px 30px;
     line-height: 24px;
 }
+
 .map-text-right {
     padding: 45px 30px;
     min-height: 522px;
@@ -1139,6 +1153,56 @@ p.license-text {
     background-color: #f6f6f6;
 }
 
+.installation  p, .installation b,.installation ul {
+	margin-bottom: 30px;
+	display: block;
+	list-style: inside;
+}
+.installation  p:last-child {
+	margin-bottom: 50px;
+}
+
+.installation h2 {
+	margin-bottom: 47px;
+}
+
+.instalation-advantages {
+	background-color: #f6f6f6;
+	margin-bottom: 50px;
+	margin-top: 45px;
+}
+
+.instalation-advantages-item {
+	padding: 40px 0;
+	color: #7e7e7e;
+	font-weight: bold;
+}
+
+.installation .button-purple {
+	padding-right: 0px;
+	margin-bottom: 100px;
+}
+
+.have-questions {
+	background: url(../img/more-questions-bg.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 110px;
+}
+
+.have-questions p {
+	padding: 70px 0;
+	font-weight: bold;
+}
+.have-questions .button-purple {
+	margin: 84px 0;
+	padding-right: 0;
+}
+
+/*.gray {
+	background-color: #f6f6f6;
+	padding: 30px 0;
+}
+*/
 @media screen and (max-width: 1200px) {
 
 	.main-banner-inner {
@@ -1192,7 +1256,6 @@ p.license-text {
 	}
 
 	.news-item  {
-	    width: 293px;
 	}
 
 	.articles-item {
@@ -1393,7 +1456,6 @@ p.license-text {
 	}
 
 	.news-item {
-    	width: 370px;
     	padding-bottom: 18px;
     	margin-bottom: 18px;
 		border-bottom: 3px solid #D4D4D4;
@@ -1409,12 +1471,13 @@ p.license-text {
     	margin-bottom: 18px;
     	border-bottom: 3px solid #9e0039;
 	}
+
 	.articles .col-lg-4:last-child .articles-item {
 		border-bottom: none;
 	}
 
 	.map-text {
-		padding: 50px 10px 0 50px;
+		padding: 50px 10px 0 5px;
 	    width: 30%;
 	}
 
@@ -1422,9 +1485,9 @@ p.license-text {
 	    width: 70%;
 	}
 
-	.map {
+/*	.map {
 		height: 400px;
-	}
+	}*/
 
 	.bottom-text {
 		width: 100%;
@@ -1457,7 +1520,7 @@ p.license-text {
 	}
 	.switcher {
 		left: 15px;
-		top: 50px;
+		top: 110px;
 	}
 
 	.main-banner-inner {
@@ -1503,12 +1566,12 @@ p.license-text {
 	    width: 50%;
 	    float: right;
 	    height: 189px;
-	    padding: 43px 0px 0 5px;
+	    padding: 24px 0px 0 5px;
 	}
 	.col-lg-3:nth-child(even) .about-us-item .about-us-item__first-half {
 	    width: 50%;
 	    background-position-x: 91%;	
-		background-size: 202%;
+		background-size: 218%;
 	}
 	.col-lg-3:nth-child(even) .about-us-item .about-us-item__first-half {
 		padding: 7% 7% 0px 7%;
@@ -1533,6 +1596,18 @@ p.license-text {
 	    margin-bottom: 88px;
 	    top: 30px;
 	}
+
+	.map-window {
+		width: 100%;
+	}
+	.map-text {
+		width: 100%;
+		float: right;
+	}
+	.map {
+		height: 100%;
+	}
+
 }
 
 @media screen and (max-width: 320px) {
@@ -1603,7 +1678,7 @@ p.license-text {
 	}
 
 	.news-item {
-	    width: 265px;
+
 	}
 
 	.articles-item {
