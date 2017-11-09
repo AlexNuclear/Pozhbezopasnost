@@ -92,27 +92,10 @@ $(".navbar-toggler").bind('click',function(){
 });
 
 
- $("#articles-switcher").bind('change', function() {
-  
-    $(".news").toggleClass("active")
-    $(".articles").toggleClass("active")
-
-    if($(".news").hasClass("active")) {
-    	$(".news").removeClass("active")
-    	$(".articles").addClass("active")
-    }
-    $(".news").fadeToggle();
-    $(".articles").fadeToggle();
- })
 
   $("#news-switcher").bind('change', function() {
-  
-    $(".news").toggleClass("active")
-    $(".articles").toggleClass("active")
-    $(".news-articles LABEL SPAN").toggleClass("purple")
-
-    $(".news").fadeToggle();
-    $(".articles").fadeToggle();
+    $(".news").toggle();
+    $(".articles").toggle();
 
  })
 
@@ -133,3 +116,23 @@ $(".navbar-toggler").bind('click',function(){
       scrollTop:  $('#anchor').offset().top - 50 }, 'slow'
     );
 });
+
+
+$(document).ready(function(){
+
+  $('.tab').bind('click', function(){
+  $( '.tab' ).removeClass('active-tab');
+  $('.tab-inner').removeClass('tab-inner-active');
+  $( this ).addClass('active-tab');
+  var i = $(this).parent('div').index();
+  $('.tab-inner').each(function(){
+    if($(this).index() == i){
+      $(this).addClass('tab-inner-active');
+    }
+  })
+  });
+}); 
+
+
+
+
